@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    Enter your marks in maths: <input type="number" id="maths"><br><br>
+    Enter your marks in english: <input type="number" id="eng"><br><br>
+    Enter your marks in urdu: <input type="number" id="urdu"><br><br>
+    <button id="click" onclick="hashir();">Enter</button>
+</body>
+
+
+<script>
+  function hashir() {
+    let math = +document.getElementById("maths").value;
+    let eng = +document.getElementById("eng").value;
+    let urdu = +document.getElementById("urdu").value;
+    let totalmarks = 300
+    let obtained = math + urdu + eng;
+    let pe = (obtained / totalmarks) * 100;
+    document.write("<h1> MARKS SHEET </h1>");
+    document.write(" <br> Obtained Marks: " + obtained);
+    document.write(" <br> Total marks of subjects: " + totalmarks);
+    document.write(" <br> Percentage: " + pe + "<br>");
+
+    if (pe <= 60) {
+        alert("C grade")
+        alert("you need to improve")
+        document.write("C grade" + "<br>")
+        document.write("you need to improve")
+    } else if (pe <= 70){
+        alert("B GRADE")
+        document.write("B grade" + "<br>")
+        document.write("good")
+    }
+
+    else if (pe <= 70) {
+        alert("B grade")
+        alert("you need to improve")
+        document.write("B grade" + "<br>") 
+        documentt.write("you need to improve")
+    } 
+    else if (pe <= 80)  {
+        alert("A GRADE")
+        document.write("A grade" + "<br>")
+        document.write("Amazing")
+    }
+
+ }
+</script>
+</html>
+
+
+
+
+

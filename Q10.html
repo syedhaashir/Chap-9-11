@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+    Enter the Temperature: <input type="number" id="a"><br><br>
+    <button id="click" onclick="hashir();">Enter</button>
+</body>
+
+    <script>
+    function hashir() {
+        let temp = document.getElementById("a").value;
+        if(temp > 40 ){
+        alert("It is too hot outside.")
+        }else if(temp>30){
+        alert("The Weather today is Normal")
+        }else if(temp > 20){
+        alert("Today's weather is cool")
+        }else if(temp < 20){
+        alert("OMG! Today’s weather is so Cool")
+    }
+}
+</script>
+</html>
+
+
+
+
+
